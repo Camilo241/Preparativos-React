@@ -1,5 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import MyButton from './Componentes/MyButton';
+import Form from './Componentes/From';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Componentes/Home';
+import About from './Componentes/About';
+
+
+
+
 
 function App() {
   return (
@@ -7,17 +16,27 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edita and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        Learn React
+        <div>
+          <Form></Form>
+          <Router>
+            <Routes>
+              <Route path="/" exact component={Home} />
+              <Route path="/about" component={About} />
+            </Routes>
+          </Router>
+        </div>
+
+        <div>
+          <MyButton></MyButton>
+        </div>
       </header>
+
+
+
     </div>
   );
 }
