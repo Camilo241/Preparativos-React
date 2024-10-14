@@ -1,0 +1,25 @@
+/* Botón Moderno con Fuente Elegante */
+.Boton {
+    background-color: #4CAF50;
+    /* Fondo verde moderno */
+    color: white;
+    /* Texto blanco */
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    /* Aplicar la fuente Poppins */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    font-weight: 600;
+    /* Peso de la fuente (negrita) */
+    transition: background-color 0.3s ease;
+    /* Transición suave al hacer hover */
+    
+}
+
+.Boton:hover {
+    background-color: #45a049;
+    /* Verde más oscuro en hover */
+}

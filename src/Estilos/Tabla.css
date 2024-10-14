@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background-color: #e1e8ed;
+    /* Fondo suave de la página */
+    font-family: Arial, sans-serif;
+}
+
+.table-container {
+    margin: 20px;
+    padding-left: 100px;
+    padding-right: 10px;
+    padding-top: 0px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra la tabla */
+}
+
+.table-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    /* Gris oscuro para el título con nueva fuente */
+}
+
+.table {
+    width: 50%;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    overflow: hidden;
+    /* Bordes redondeados */
+    font-family: 'Poppins', sans-serif;
+    /* Aplicar la fuente Poppins */
+}
+
+.table th,
+.table td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    /* Negrita */
+}
+
+.table th {
+    background-color: #4a90e2;
+    color: #ffffff;
+    font-weight: 600;
+    /* Texto en negrita */
+}
+
+.table tr:nth-child(even) {
+    background-color: #e8f4fc;
+    /* Azul muy claro para filas pares */
+}
+
+.table tr:hover {
+    background-color: #d3e6f5;
+    /* Fondo azul suave al pasar el mouse */
+}
+
+.table td {
+    color: #333333;
+    font-weight: 400;
+    /* Texto gris oscuro y no tan pesado como el header */
+}
+

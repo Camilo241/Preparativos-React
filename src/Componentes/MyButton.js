@@ -1,6 +1,10 @@
 import React, {useState}from "react";
+import '../Estilos/MyButton.css';
 
 function MyButton() {
+    return(
+        <button className="Boton">Crear nueva</button>
+    );
     
     const [clicked, setClicked] = useState(false);  //se define el nombre de la variable clicked en el estado falso y utilizamos el setcliked para que altere el eastado
 
