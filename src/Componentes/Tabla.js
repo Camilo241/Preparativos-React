@@ -3,8 +3,8 @@ import '../Estilos/Tabla.css';
 
 function Tabla() {
     const data = [
-        { Id: 1, name: 'Juan', Descripcion : 'Adelnatar Taareas de IA', category : 'Universidad' },
-        { Id: 2, name: 'Ana', Descripcion : 'Comprar las Cosas' ,category : 'Casa' },
+        { Id: 1, name: 'Juan', Descripcion: 'Adelnatar Taareas de IA', category: 'Universidad' },
+        { Id: 2, name: 'Ana', Descripcion: 'Comprar las Cosas', category: 'Casa' },
         { Id: 3, name: 'Luis', Descripcion: 'Ahorro', category: 'Importante' },
     ];
     return (
@@ -28,6 +28,21 @@ function Tabla() {
                             <td>{user.name}</td>
                             <td>{user.Descripcion}</td>
                             <td>{user.category}</td>
+                            <td>
+                                <select>
+                                    <option>Seleccione...</option>
+                                    <option value="Baja">Baja</option>
+                                    <option value="Media">Media</option>
+                                    <option value="Alta">Alta</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button className="edit-button">Editar</button>
+                                <button className="delete-button">Eliminar</button>
+                            </td>
+                            <td>
+                                <progress value="60" max="100"></progress>
+                            </td>
                         </tr>
                     ))}
                 </tbody>
